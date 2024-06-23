@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAnime</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #CAB3C0; /* Light purple background */
+            color: #333; /* Dark grey text */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #ea1489; /* Pink header background */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        /* Navigation styles */
+        nav {
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #ea1489; /* Pink link color */
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ea1489;
+            color: #fff; /* White text on hover */
+        }
+
+        /* Section title */
+        h2 {
+            color: #ea1489; /* Pink section title */
+            margin-bottom: 20px;
+        }
+
+        /* Anime list styles */
+        .anime-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .anime-item {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+
+        .anime-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .anime-item h1 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .anime-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #ea1489; /* Pink footer background */
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            color: #fff; /* White text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="image/header.jpeg" alt="Header Image">
+</header>
+
+<div class="container">
+    <nav>
+        <a href="index.html" target="_blank">Home</a>
+        <a href="biodata.html" target="_blank">Biodata</a>
+        <a href="contact.html" target="_blank">Contacts</a>
+        <a href="gallery.html" target="_blank">Gallery</a>
+        <a href="anime.html" target="_blank">Anime</a>
+        <a href="hobby.html" target="_blank">Hobby</a>
+    </nav>
+
+    <hr>
+
+    <h2>NADIA'S ANIME FAVORITES</h2>
+
+    <!-- Anime list section -->
+    <div class="anime-list">
+        <!-- Anime 1: Haikyuu -->
+        <div class="anime-item">
+            <h1>1. HAIKYUU</h1>
+            <a href="https://www.tiktok.com/@txo.kei/video/7368765865396849925">
+                <img src="image/haikyuupic.jpeg" alt="Haikyuu Image">
+            </a>
+        </div>
+
+        <!-- Anime 2: Ao Haru Ride -->
+        <div class="anime-item">
+            <h1>2. AO HARU RIDE</h1>
+            <a href="https://www.tiktok.com/@nxqrui/video/7268718047563746592">
+                <img src="image/aoharuridepic.jpeg" alt="Ao Haru Ride Image">
+            </a>
+        </div>
+
+        <!-- Anime 3: Naruto -->
+        <div class="anime-item">
+            <h1>3. NARUTO</h1>
+            <a href="https://www.tiktok.com/@senjuheart/video/7284245284530556161">
+                <img src="image/narutopic.jpeg" alt="Naruto Image">
+            </a>
+        </div>
+
+        <!-- Anime 4: Kimi ni Todoke -->
+        <div class="anime-item">
+            <h1>4. KIMI NI TODOKE</h1>
+            <a href="https://www.tiktok.com/@hzak3i/video/7110963389081390363">
+                <img src="image/kiminitodokepic.jpeg" alt="Kimi ni Todoke Image">
+            </a>
+        </div>
+
+        <!-- Anime 5: Jujutsu Kaisen -->
+        <div class="anime-item">
+            <h1>5. JUJUTSU KAISEN</h1>
+            <a href="https://www.tiktok.com/@maderezs/video/7299915740126153985">
+                <img src="image/jjkpic.jpeg" alt="Jujutsu Kaisen Image">
+            </a>
+        </div>
+
+        <!-- Anime 6: Wind Breaker -->
+        <div class="anime-item">
+            <h1>6. WIND BREAKER</h1>
+            <a href="https://www.tiktok.com/@gffubuki/video/7343213168967159045?is_from_webapp=1&sender_device=pc&web_id=7369005193029568007">
+                <img src="image/windbreaker.jpeg" alt="Wind Breaker Image">
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Nadia's Page. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
